@@ -87,3 +87,57 @@ footer {
     border-radius: 5px;
     font-weight: bold;
 }
+
+.hero {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+    url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e");
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.hero h2 {
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+
+    header{
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    nav{
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav a{
+        margin: 0;
+    }
+
+    .hero h2{
+        font-size: 40px;
+    }
+
+    .hero p{
+        font-size: 16px;
+        padding: 0 15px;
+    }
+
+    .btn{
+        padding: 10px 20px;
+    }
+}
+
+
