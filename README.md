@@ -20,7 +20,7 @@ https://kirtidhama0613.github.io/wanderlog/
 
 ## 📷 Screenshot
 ![Wanderlog]
-(Screenshot%202026-07-10%20120628.png)
+(Screenshot.png)
 
 ## 👩‍💻 Author
 Kirti Dhama
