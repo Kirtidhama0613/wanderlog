@@ -19,16 +19,44 @@
 </header>
 
 <main>
+</header>
    <section class="hero">
     <h2>Explore the World</h2>
     <p>Discover beautiful places and create unforgettable travel memories.</p>
     <a href="#" class="btn">Explore Now</a>
+</section>
+<section class="trip-form">
+
+    <h2>Add New Trip</h2>
+
+    <form id="tripForm">
+
+        <input type="text" id="title" placeholder="Trip Title" required>
+
+        <input type="text" id="destination" placeholder="Destination" required>
+
+        <input type="date" id="date" required>
+
+        <textarea id="notes" placeholder="Trip Notes"></textarea>
+
+        <button type="submit">Add Trip</button>
+
+    </form>
+
+</section>
+
+<section class="trip-list">
+
+    <h2>My Trips</h2>
+
+    <div id="tripContainer"></div>
+
 </section>
 </main>
 
 <footer>
     <p>© 2026 Wanderlog. All Rights Reserved.</p>
 </footer>
-
+<script src="script.js"></script>
 </body>
 </html>

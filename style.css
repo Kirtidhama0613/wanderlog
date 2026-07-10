@@ -140,4 +140,136 @@ footer {
     }
 }
 
+.trip-form,
+.trip-list{
+    max-width:700px;
+    margin:40px auto;
+    padding:20px;
+}
+
+.trip-form h2,
+.trip-list h2{
+    text-align:center;
+    color:#2d6a4f;
+}
+
+#tripForm{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+#tripForm input,
+#tripForm textarea{
+    padding:12px;
+    font-size:16px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+#tripForm button{
+    background:#2d6a4f;
+    color:white;
+}
+
+.trip-list{
+    padding: 40px;
+    text-align: center;
+}
+
+#tripContainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.trip-card{
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    transition: 0.3s;
+    text-align: left;
+}
+
+.trip-card:hover{
+    transform: translateY(-8px);
+}
+
+.trip-card h3{
+    color: #2d6a4f;
+    margin-bottom: 10px;
+}
+
+.trip-card p{
+    margin: 8px 0;
+    color: #555;
+}
+
+.trip-card button{
+    margin-top: 10px;
+    margin-right: 10px;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.edit-btn{
+    background:#2d6a4f;
+    color:white;
+}
+
+.delete-btn{
+    background:#e63946;
+    color:white;
+}
+
+#tripContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.trip-card {
+    background: linear-gradient(135deg, #2d6a4f, #52b788);
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.trip-card:hover {
+    transform: translateY(-8px);
+}
+
+.trip-card h3 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.trip-card p {
+    margin: 10px 0;
+    color: white;
+}
+
+.trip-card .date {
+    background: rgba(255,255,255,0.2);
+    display: inline-block;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.empty-state {
+    text-align: center;
+    padding: 40px;
+    background: #f4f4f4;
+    border-radius: 12px;
+    color: #555;
+    font-size: 18px;
+}
 
