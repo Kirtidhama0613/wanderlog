@@ -19,7 +19,7 @@ A simple Trip Planner web application built using HTML, CSS and JavaScript.
 https://kirtidhama0613.github.io/wanderlog/
 
 ## 📷 Screenshot
-![Wanderlog](Screenshot 2026-07-10 120628.png
+![Wanderlog](Screenshot 2026-07-10 120628.png)
 
 ## 👩‍💻 Author
 Kirti Dhama
