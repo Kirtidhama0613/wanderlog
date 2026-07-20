@@ -88,25 +88,6 @@ footer {
     font-weight: bold;
 }
 
-.hero {
-    height: 80vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
-    url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e");
-    background-size: cover;
-    background-position: center;
-    color: white;
-}
-
-.hero h2 {
-    font-size: 55px;
-    margin-bottom: 15px;
-}
-
 @media (max-width: 768px) {
 
     header{
@@ -177,12 +158,6 @@ footer {
     text-align: center;
 }
 
-#tripContainer{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
-    margin-top: 30px;
-}
 
 .trip-card{
     background: white;
@@ -198,7 +173,7 @@ footer {
 }
 
 .trip-card h3{
-    color: #2d6a4f;
+    color: white;
     margin-bottom: 10px;
 }
 
@@ -273,3 +248,214 @@ footer {
     font-size: 18px;
 }
 
+#imagePreview {
+    border: 2px solid #ddd;
+    padding: 5px;
+    object-fit: cover;
+}
+
+.trip-image{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:10px;
+    margin-bottom:10px;
+}
+
+.trip-details {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.trip-details img {
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.trip-details h2,
+.trip-details h3 {
+    color: white;
+}
+
+.trip-details button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    background: #2e8b57;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.trip-details button:hover {
+    background:white;
+}
+
+#searchInput{
+    width:100%;
+    padding:12px;
+    margin:20px 0;
+    border-radius:8px;
+    border:1px solid #ccc;
+    font-size:16px;
+}
+
+#filterDate{
+    width:100%;
+    padding:12px;
+    margin:10px 0 20px;
+    border-radius:8px;
+    border:1px solid #ccc;
+    font-size:16px;
+}
+
+.stats{
+    margin:30px;
+    text-align:center;
+}
+
+.stats-box{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.stat-card{
+    background:#8fd3a8;
+    padding:20px;
+    border-radius:12px;
+    width:180px;
+    box-shadow:0 4px 8px rgba(0,0,0,.2);
+}
+
+.stat-card h3{
+    font-size:30px;
+    margin:0;
+}
+
+.stat-card p{
+    margin-top:10px;
+}
+
+#themeToggle{
+    position:fixed;
+    top:20px;
+    right:20px;
+    padding:10px 15px;
+    border:none;
+    border-radius:8px;
+    background:#4CAF50;
+    color:white;
+    cursor:pointer;
+    z-index:1000;
+}
+
+body.dark{
+    background:#1b1b1b;
+    color:white;
+}
+
+body.dark .trip-card{
+    background:#2d2d2d;
+    color:white;
+}
+
+body.dark input,
+body.dark textarea{
+    background:#333;
+    color:white;
+    border:1px solid #666;
+}
+
+body.dark .stat-card{
+    background:#2d2d2d;
+    color:white;
+}
+
+@media (max-width: 768px){
+
+    .container{
+        width:95%;
+        margin:auto;
+        padding:15px;
+    }
+
+    .trip-card{
+        width:100%;
+        margin-bottom:20px;
+    }
+
+    .trip-card img{
+        width:100%;
+        height:220px;
+        object-fit:cover;
+    }
+
+    .stats-box{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    input,
+    textarea,
+    button{
+        width:100%;
+        margin:8px 0;
+        box-sizing:border-box;
+    }
+
+    .trip-actions{
+        display:flex;
+        flex-direction:column;
+        gap:10px;
+    }
+
+    #themeToggle{
+        top:10px;
+        right:10px;
+        padding:8px 12px;
+    }
+}
+
+button{
+    transition:0.3s ease;
+}
+
+button:hover{
+    transform:translateY(-2px);
+    opacity:0.9;
+    cursor:pointer;
+}
+
+.trip-card{
+    transition:transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.trip-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 8px 20px rgba(0,0,0,0.2);
+}
+
+input:focus,
+textarea:focus{
+    outline:none;
+    border:2px solid #4CAF50;
+    box-shadow:0 0 8px rgba(76,175,80,0.4);
+}
+
+h1{
+    text-align:center;
+    letter-spacing:1px;
+}
+
+h2{
+    margin-top:25px;
+}

@@ -1,0 +1,44 @@
+#sectionProfile{
+    background: #1e1e1e;
+    color:white;
+    padding: 80px 20px;
+    text-align:center;
+}
+
+
+#profileTrips{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+    justify-content:center;
+    margin-top:30px;
+}
+
+#profileTrips .trip-card{
+    width:300px;    
+    color:white;
+}
+
+.empty-state{
+    text-align:center;
+    padding:40px;
+    color:#666;
+}
+
+.empty-state h3{
+    font-size:28px;
+}
+
+.empty-state p{
+    font-size:18px;
+}
+
+.trip-card{
+    transition:.3s;
+}
+
+.trip-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 8px 20px rgba(0,0,0,.2);
+}
+

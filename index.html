@@ -18,6 +18,8 @@
     </nav>
 </header>
 
+<button id="themeToggle">🌙 Dark Mode</button>
+
 <main>
 </header>
    <section class="hero">
@@ -36,6 +38,14 @@
         <input type="text" id="destination" placeholder="Destination" required>
 
         <input type="date" id="date" required>
+        <label>Trip Cover Photo</label>
+
+        <input type="file" id="tripImage" accept="image/*">
+
+        <div id="imagePreviewContainer">
+
+        <img id="imagePreview" src="" alt="Image Preview" style="display:none; width:100%; max-width:300px; border-radius:10px; margin-top:10px;">
+        </div>
 
         <textarea id="notes" placeholder="Trip Notes"></textarea>
 
@@ -49,8 +59,56 @@
 
     <h2>My Trips</h2>
 
+    <input
+    type="text" id="searchInput" placeholder="🔍 Search by destination..." onkeyup="searchTrips()"/>
+
+    <input type="date" id="filterDate" onchange="filterTripsByDate()"/>
+
+    <button onclick="sortTrips()"> Sort A-Z</button>
+    
     <div id="tripContainer"></div>
 
+     <section class="stats">
+    
+        <h2>📊 Trip Statistics</h2>
+
+    <div class="stats-box">
+        <div class="stat-card">
+            <h3 id="totalTrips">0</h3>
+            <p>Total Trips</p>
+        </div>
+
+        <div class="stat-card">
+            <h3 id="favoriteTrips">0</h3>
+            <p>Favorite Trips</p>
+        </div>
+        <div class="stat-card">
+            <h3 id="totalDestinations">0</h3>
+            <p>Total Destinations</p>
+        </div>
+    </div>
+
+</section>
+
+
+    <div id="tripDetails" class="trip-details" style="display: none;">
+
+    <h2>Trip Details</h2>
+
+    <img id="detailImage" src="" alt="Trip Image">
+
+    <h3 id="detailTitle"></h3>
+
+    <p><strong>Destination:</strong> <span id="detailDestination"></span></p>
+
+    <p><strong>Date:</strong> <span id="detailDate"></span></p>
+
+    <p><strong>Notes:</strong></p>
+
+    <p id="detailNotes"></p>
+
+    <button onclick="closeDetails()">Close</button>
+</div>
 </section>
 </main>
 

@@ -1,26 +1,34 @@
-# 🌍 Wanderlog
+# 🌍 WanderLog
 
-A simple Trip Planner web application built using HTML, CSS and JavaScript.
+A simple and interactive travel planner built using HTML, CSS, and JavaScript.
 
 ## 🚀 Features
-- Add new trips
-- Edit existing trips
-- Delete trips
-- Save trips using LocalStorage
-- Responsive design
 
-## 🛠 Technologies Used
+- ➕ Add New Trip
+- ✏️ Edit Trip
+- 🗑️ Delete Trip
+- 🔍 Search Trips
+- 📅 Filter Trips by Date
+- ⭐ Favorite Trips
+- 📊 Trip Statistics
+- 👤 Traveler Profile
+- 🔗 Share Profile Link
+- 🌙 Dark Mode
+- 📱 Responsive Design
+- 🖼️ Image Upload with Base64 Storage
+- 💾 Local Storage Support
+
+## 🛠️ Technologies Used
+
 - HTML5
 - CSS3
 - JavaScript
-- LocalStorage
+- Local Storage
 
-## 🌐 Live Demo
-https://kirtidhama0613.github.io/wanderlog/
+## 📷 Screenshots
 
-## 📷 Screenshot
-![Wanderlog](screenshot.png)
+
 
 ## 👩‍💻 Author
-Kirti Dhama
 
+Kirti Dhama

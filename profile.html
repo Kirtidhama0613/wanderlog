@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traveler Profile</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>🌍 Wanderlog</h1>
+</header>
+
+<section class="profile">
+
+    <h2>👤 Traveler Profile</h2>
+
+    <h3>Kirti Dhama</h3>
+
+    <button onclick="copyProfileLink()">🔗 Copy Profile Link</button>
+
+    <p>
+        Passionate traveler and web developer who loves exploring new places and documenting journeys.
+    </p>
+
+</section>
+
+<section>
+
+    <h2>My Trips</h2>
+
+    <div id="profileTrips"></div>
+    
+    <h3 id="userName"></h3>
+
+</section>
+
+<script src="profile.js"></script>
+
+<img src="${trip.image}" alt="Trip Image" onerror="this.src='https://via.placeholder.com/300x180?text=No+Image'">
+
+
+
+</body>
+
+</html>
