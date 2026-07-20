@@ -26,8 +26,17 @@ A simple and interactive travel planner built using HTML, CSS, and JavaScript.
 - Local Storage
 
 ## 📷 Screenshots
+## Home Page
+![Home](screenshots/home.png)
 
+## Add-Card and Dark Mode
+![Add-Card and Dark Mode](screenshots/add-trip-and-dark-mode.png)
 
+## Statistics
+![Statistics](screenshots/statistics.png)
+
+## Profile
+![Profile](screenshots/profile.png)
 
 ## 👩‍💻 Author
 
