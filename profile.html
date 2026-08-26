@@ -7,12 +7,14 @@
     <title>Traveler Profile</title>
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="profile.css">
 </head>
 
 <body>
 
 <header>
     <h1>🌍 Wanderlog</h1>
+    <button id="themeToggle">🌙 Dark Mode</button>
 </header>
 
 <section class="profile">
@@ -29,7 +31,53 @@
 
 </section>
 
-<section>
+<section class="profile-stats"
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    width: 90%;
+    margin: 30px auto;
+    padding: 20px;
+">
+
+    <div class="stat-card"
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 8px;
+        width: auto;
+    ">
+        <h3 style="margin: 0;">🧳 Total Trips</h3>
+        <p id="profileTotalTrips" style="margin: 0; font-weight:900;">0</p>
+    </div>
+
+    <div class="stat-card"
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 8px;
+        width: auto;
+    ">
+        <h3 style="margin: 0;">⭐ Favorite Trips</h3>
+        <p id="profileFavoriteTrips" style="margin: 0; font-weight:900;">0</p>
+    </div>
+
+    <div class="stat-card"
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 8px;
+        width: auto;
+    ">
+        <h3 style="margin: 0;">📍 Destinations</h3>
+        <p id="profileDestinations" style="margin: 0; font-weight:900;">0</p>
+    </div>
+
+</section>
+
+<section class="profile-trips-section">
 
     <h2>My Trips</h2>
 
@@ -40,9 +88,6 @@
 </section>
 
 <script src="profile.js"></script>
-
-<img src="${trip.image}" alt="Trip Image" onerror="this.src='https://via.placeholder.com/300x180?text=No+Image'">
-
 
 
 </body>

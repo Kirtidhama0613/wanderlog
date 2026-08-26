@@ -1,29 +1,32 @@
-# 🌍 WanderLog
+# 🌍 Wanderlog
 
-A simple and interactive travel planner built using HTML, CSS, and JavaScript.
+Wanderlog is a travel planning and trip management web application where users can create, manage, search, filter and save their travel memories.
 
-## 🚀 Features
+## ✨ Features
 
-- ➕ Add New Trip
-- ✏️ Edit Trip
-- 🗑️ Delete Trip
-- 🔍 Search Trips
-- 📅 Filter Trips by Date
-- ⭐ Favorite Trips
-- 📊 Trip Statistics
-- 👤 Traveler Profile
-- 🔗 Share Profile Link
-- 🌙 Dark Mode
-- 📱 Responsive Design
-- 🖼️ Image Upload with Base64 Storage
-- 💾 Local Storage Support
+- ➕ Add new trips
+- ✏️ Edit existing trips
+- 🗑️ Delete trips
+- ⭐ Mark trips as favorites
+- 🔍 Search trips
+- 📅 Filter trips by date
+- ⭐ Filter favorite trips
+- 👁️ View trip details
+- 🖼️ Upload trip cover photos
+- 📝 Add trip notes
+- 📊 Trip statistics dashboard
+- 👤 Traveler profile
+- 🔗 Copy profile link
+- 🌙 Dark / Light mode
+- 📱 Responsive mobile design
 
 ## 🛠️ Technologies Used
 
-- HTML5
-- CSS3
+### Frontend
+- HTML
+- CSS
 - JavaScript
-- Local Storage
+
 
 ## 📷 Screenshots
 ## Home Page
@@ -41,3 +44,27 @@ A simple and interactive travel planner built using HTML, CSS, and JavaScript.
 ## 👩‍💻 Author
 
 Kirti Dhama
+
+### Backend
+- Python
+- Flask
+- Flask-CORS
+
+### Database
+- SQLite
+
+## 📂 Project Structure
+
+```text
+Wanderlog/
+│
+├── index.html
+├── profile.html
+├── style.css
+├── profile.css
+├── script.js
+├── profile.js
+├── app.py
+├── wanderlog.db
+└── README.md
+(Update Wanderlog full stack project)

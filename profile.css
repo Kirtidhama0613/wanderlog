@@ -1,44 +1,424 @@
-#sectionProfile{
-    background: #1e1e1e;
-    color:white;
-    padding: 80px 20px;
-    text-align:center;
+/* ================================
+   PROFILE PAGE
+================================ */
+
+.profile {
+    max-width: 800px;
+    margin: 45px auto 30px;
+    padding: 30px 20px;
+    text-align: center;
+    background: transparent;
+}
+
+.profile h2 {
+    margin: 0 0 12px;
+    font-size: 38px;
+    color: #1f2937;
+}
+
+.profile h3 {
+    margin: 10px 0 18px;
+    font-size: 28px;
+    color: #2d6a4f;
+}
+
+.profile p {
+    max-width: 650px;
+    margin: 20px auto;
+    line-height: 1.6;
+    color: #555;
+    font-size: 17px;
+}
+
+.profile button {
+    background: #2d6a4f;
+    color: white;
+    border: none;
+    padding: 11px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.profile button:hover {
+    transform: translateY(-2px);
 }
 
 
-#profileTrips{
-    display:flex;
-    flex-wrap:wrap;
-    gap:20px;
-    justify-content:center;
-    margin-top:30px;
+/* ================================
+   PROFILE STATISTICS
+================================ */
+
+.profile-stats {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+
+    width: 92% !important;
+    max-width: 1200px;
+    margin: 30px auto !important;
+    padding: 0 !important;
+
+    box-sizing: border-box;
 }
 
-#profileTrips .trip-card{
-    width:300px;    
-    color:white;
+
+/* Individual statistic card */
+
+.profile-stats .stat-card {
+    display: flex !important;
+    flex-direction: column !important;
+
+    justify-content: center;
+    align-items: center;
+
+    width: auto !important;
+    min-height: 110px;
+
+    padding: 20px !important;
+    margin: 0 !important;
+
+    background: white;
+    border: 1px solid #dfe7e3;
+    border-radius: 15px;
+
+    box-shadow: 0 6px 18px rgba(45, 106, 79, 0.12);
+
+    transition: 0.2s ease;
 }
 
-.empty-state{
-    text-align:center;
-    padding:40px;
-    color:#666;
+.profile-stats .stat-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(45, 106, 79, 0.18);
 }
 
-.empty-state h3{
-    font-size:28px;
+
+/* Statistic heading */
+
+.profile-stats .stat-card h3 {
+    margin: 0 0 8px !important;
+    font-size: 17px;
+    color: #374151;
 }
 
-.empty-state p{
-    font-size:18px;
+
+/* Statistic number */
+
+.profile-stats .stat-card p {
+    margin: 0 !important;
+    font-size: 30px;
+    font-weight: bold;
+    color: #2d6a4f;
 }
 
-.trip-card{
-    transition:.3s;
+
+/* ================================
+   MY TRIPS SECTION
+================================ */
+
+body > section:last-of-type {
+    padding: 40px 20px;
+    text-align: center;
 }
 
-.trip-card:hover{
-    transform:translateY(-8px);
-    box-shadow:0 8px 20px rgba(0,0,0,.2);
+body > section:last-of-type > h2 {
+    font-size: 32px;
+    color: #2d6a4f;
+    margin-bottom: 30px;
 }
 
+
+/* Trip container */
+
+#profileTrips {
+    width: 95%;
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    /* IMPORTANT:
+       All cards stay in ONE horizontal row */
+    grid-template-columns: repeat(5, minmax(210px, 1fr));
+
+    gap: 20px;
+
+    align-items: stretch;
+}
+
+
+/* ================================
+   PROFILE TRIP CARD
+================================ */
+
+#profileTrips .trip-card {
+    width: auto !important;
+    max-width: none !important;
+
+    min-width: 0;
+
+    margin: 0 !important;
+    padding: 16px;
+
+    box-sizing: border-box;
+
+    background: linear-gradient(
+        135deg,
+        #2d6a4f,
+        #52b788
+    );
+
+    color: white;
+
+    border-radius: 14px;
+
+    box-shadow:
+        0 5px 15px rgba(45, 106, 79, 0.20);
+
+    text-align: left;
+
+    transition: 0.25s ease;
+
+    /* Makes cards same overall height */
+    display: flex;
+    flex-direction: column;
+}
+
+#profileTrips .trip-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 10px 25px rgba(45, 106, 79, 0.28);
+}
+
+
+/* ================================
+   TRIP IMAGE
+================================ */
+
+#profileTrips .trip-card .trip-image {
+    width: 100%;
+    height: 150px;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+
+    margin-bottom: 12px;
+
+    display: block;
+}
+
+
+/* ================================
+   NO IMAGE PLACEHOLDER
+================================ */
+
+#profileTrips .trip-card:not(:has(.trip-image))::before {
+    content: "🖼️\A No Image";
+
+    white-space: pre;
+
+    width: 100%;
+    height: 150px;
+
+    margin-bottom: 12px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    box-sizing: border-box;
+
+    background: rgba(255, 255, 255, 0.20);
+
+    border: 1px dashed rgba(255, 255, 255, 0.65);
+
+    border-radius: 10px;
+
+    color: white;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+}
+
+
+/* ================================
+   TRIP TEXT
+================================ */
+
+#profileTrips .trip-card h3 {
+    margin: 5px 0 12px;
+
+    font-size: 20px;
+
+    color: white;
+}
+
+#profileTrips .trip-card p {
+    margin: 8px 0;
+
+    font-size: 14px;
+
+    line-height: 1.4;
+
+    color: white;
+}
+
+
+/* ================================
+   EMPTY STATE
+================================ */
+
+#profileTrips .empty-state {
+    grid-column: 1 / -1;
+
+    text-align: center;
+
+    padding: 40px;
+
+    background: #f4f4f4;
+
+    border-radius: 14px;
+
+    color: #555;
+}
+
+#profileTrips .empty-state h3 {
+    font-size: 25px;
+}
+
+
+/* ================================
+   HIDE EXTRA USERNAME
+================================ */
+
+/* profile.js already uses the profile name.
+   This prevents "Kirti" appearing
+   below My Trips. */
+
+#userName {
+    display: none;
+}
+
+
+/* ================================
+   DARK MODE
+================================ */
+
+body.dark .profile h2 {
+    color: white;
+}
+
+body.dark .profile p {
+    color: #ccc;
+}
+
+body.dark .profile-stats .stat-card {
+    background: #292929;
+    border-color: #444;
+}
+
+body.dark .profile-stats .stat-card h3 {
+    color: #ddd;
+}
+
+body.dark .profile-stats .stat-card p {
+    color: #8fd3a8;
+}
+
+body.dark body > section:last-of-type > h2 {
+    color: #8fd3a8;
+}
+
+
+/* ================================
+   TABLET
+================================ */
+
+@media (max-width: 1000px) {
+
+    #profileTrips {
+        grid-template-columns:
+            repeat(5, minmax(190px, 1fr));
+
+        overflow-x: auto;
+
+        justify-content: start;
+
+        padding-bottom: 15px;
+    }
+
+    #profileTrips .trip-card {
+        min-width: 190px;
+    }
+
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 700px) {
+
+    .profile {
+        margin-top: 30px;
+        padding: 20px 15px;
+    }
+
+    .profile h2 {
+        font-size: 30px;
+    }
+
+    .profile h3 {
+        font-size: 24px;
+    }
+
+    .profile p {
+        font-size: 15px;
+    }
+
+
+    /* Statistics become vertical */
+
+    .profile-stats {
+        grid-template-columns: 1fr !important;
+
+        width: 90% !important;
+
+        gap: 15px;
+    }
+
+
+    .profile-stats .stat-card {
+        min-height: 90px;
+    }
+
+
+    /* Trips remain horizontal */
+
+    #profileTrips {
+        display: flex;
+
+        overflow-x: auto;
+
+        justify-content: flex-start;
+
+        gap: 15px;
+
+        width: 92%;
+
+        padding-bottom: 15px;
+    }
+
+    #profileTrips.trip-card {
+        flex: 0 0 240px;
+        min-width: 240px;
+    }
+}

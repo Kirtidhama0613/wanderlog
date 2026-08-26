@@ -10,7 +10,7 @@
 
 <header>
     <h1>Wanderlog</h1>
-
+    <button onclick="viewProfile()">👤 View Profile</button> 
     <nav>
         <a href="#">Home</a>
         <a href="#">Destinations</a>
@@ -21,7 +21,6 @@
 <button id="themeToggle">🌙 Dark Mode</button>
 
 <main>
-</header>
    <section class="hero">
     <h2>Explore the World</h2>
     <p>Discover beautiful places and create unforgettable travel memories.</p>
@@ -60,11 +59,13 @@
     <h2>My Trips</h2>
 
     <input
-    type="text" id="searchInput" placeholder="🔍 Search by destination..." onkeyup="searchTrips()"/>
+    type="text" id="searchInput" placeholder="🔍 Search by destination..." onkeyup="applyFilters()"/>
 
-    <input type="date" id="filterDate" onchange="filterTripsByDate()"/>
+    <input type="date" id="filterDate" onchange="applyFilters()"/>
 
-    <button onclick="sortTrips()"> Sort A-Z</button>
+    <button type="button" id="favoriteFilterBtn" onclick="toggleFavoriteFilter()">
+    ⭐ Favorites
+</button>
     
     <div id="tripContainer"></div>
 
