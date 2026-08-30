@@ -1,8 +1,12 @@
-# 🌍 Wanderlog
+# ✈️ Wanderlog - Trip Planner Web Application
 
-Wanderlog is a travel planning and trip management web application where users can create, manage, search, filter and save their travel memories.
+Wanderlog is a full-stack Trip Planner web application that allows users to manage and organize their travel plans.
 
-## ✨ Features
+Users can add trips, edit trip details, delete trips, mark trips as favorites, search and filter trips, upload trip images, and view trip statistics.
+
+---
+
+## 🚀 Features
 
 - ➕ Add new trips
 - ✏️ Edit existing trips
@@ -11,39 +15,22 @@ Wanderlog is a travel planning and trip management web application where users c
 - 🔍 Search trips
 - 📅 Filter trips by date
 - ⭐ Filter favorite trips
-- 👁️ View trip details
-- 🖼️ Upload trip cover photos
-- 📝 Add trip notes
-- 📊 Trip statistics dashboard
-- 👤 Traveler profile
-- 🔗 Copy profile link
-- 🌙 Dark / Light mode
-- 📱 Responsive mobile design
+- 🖼️ Upload trip images
+- 👁️ View complete trip details
+- 📊 Trip statistics
+- 🌙 Dark mode
+- 👤 User profile page
+- 💾 Persistent data storage using SQLite
+- 🔗 Frontend and backend API integration
+
+---
 
 ## 🛠️ Technologies Used
 
 ### Frontend
-- HTML
-- CSS
+- HTML5
+- CSS3
 - JavaScript
-
-
-## 📷 Screenshots
-## Home Page
-![Home](screenshots/home.png)
-
-## Add-Card and Dark Mode
-![Add-Card and Dark Mode](screenshots/add-trip-and-dark-mode.png)
-
-## Statistics
-![Statistics](screenshots/statistics.png)
-
-## Profile
-![Profile](screenshots/profile.png)
-
-## 👩‍💻 Author
-
-Kirti Dhama
 
 ### Backend
 - Python
@@ -53,18 +40,31 @@ Kirti Dhama
 ### Database
 - SQLite
 
+### Tools
+- VS Code
+- Git
+- GitHub
+
+---
+
 ## 📂 Project Structure
 
 ```text
-Wanderlog/
+wanderlog-fullstack/
+│
+├── backend/
+│   ├── app.py
+│   └── wanderlog.db
+│
+├── screenshots/
 │
 ├── index.html
-├── profile.html
 ├── style.css
-├── profile.css
 ├── script.js
+│
+├── profile.html
+├── profile.css
 ├── profile.js
-├── app.py
-├── wanderlog.db
-└── README.md
-(Update Wanderlog full stack project)
+│
+├── README.md
+└── .gitignore
