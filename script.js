@@ -17,7 +17,7 @@ let trips = [];
 
 async function loadTrips() {
     try {
-        const response = await fetch("http://wanderlog-1sta.onrender.com/api/trips");
+        const response = await fetch("https://wanderlog-1sta.onrender.com/api/trips");
 
         if (!response.ok) {
             throw new Error("Failed to load trips");
@@ -68,7 +68,7 @@ form.addEventListener("submit", async function (e) {
         try {
 
             const response = await fetch(
-                "http://wanderlog-1sta.onrender.com/api/trips",
+                "https://wanderlog-1sta.onrender.com/api/trips",
                 {
                     method: "POST",
                     headers: {
@@ -122,7 +122,7 @@ form.addEventListener("submit", async function (e) {
     try {
 
         const response = await fetch(
-            `http://wanderlog-1sta.onrender.com/api/trips/${tripId}`,
+            `https://wanderlog-1sta.onrender.com/api/trips/${tripId}`,
             {
                 method: "PUT",
                 headers: {
@@ -258,7 +258,7 @@ async function deleteTrip(index) {
     try {
 
         const response = await fetch(
-            `http://wanderlog-1sta.onrender.com/api/trips/${tripId}`,
+            `https://wanderlog-1sta.onrender.com/api/trips/${tripId}`,
             {
                 method: "DELETE"
             }
@@ -555,7 +555,7 @@ async function toggleFavorite(index) {
     try {
 
         const response = await fetch(
-            `http://wanderlog-1sta.onrender.com/api/trips/${tripId}/favorite`,
+            `https://wanderlog-1sta.onrender.com/api/trips/${tripId}/favorite`,
             {
                 method: "PUT"
             }
