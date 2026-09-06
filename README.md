@@ -6,6 +6,13 @@ Users can add trips, edit trip details, delete trips, mark trips as favorites, s
 
 ---
 
+## 🌐 Live Demo
+
+- **Frontend (Live Website):** https://kirtidhama0613.github.io/wanderlog/
+- **Backend API:** https://wanderlog-1sta.onrender.com
+- **Health Check:** https://wanderlog-1sta.onrender.com/api/health
+
+  
 ## 🚀 Features
 
 - ➕ Add new trips
