@@ -75,6 +75,7 @@ wanderlog-fullstack/
 │
 ├── README.md
 └── .gitignore
+```
 
 ## 📸 Screenshots
 
