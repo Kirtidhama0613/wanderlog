@@ -115,27 +115,37 @@ function copyProfileLink() {
     alert("Profile link copied successfully!");
 }
 
+/* ================================
+   DARK MODE
+================================ */
+
 const themeToggle = document.getElementById("themeToggle");
+
+/* Load saved theme */
+
+const savedTheme = localStorage.getItem("theme");
+
+if (savedTheme === "dark") {
+    document.body.classList.add("dark");
+    themeToggle.innerText = "☀️ Light Mode";
+} else {
+    document.body.classList.remove("dark");
+    themeToggle.innerText = "🌙 Dark Mode";
+}
+
+
+/* Toggle theme */
 
 themeToggle.addEventListener("click", () => {
 
-    document.body.classList.toggle("dark");
+    const isDark = document.body.classList.toggle("dark");
 
-    if (document.body.classList.contains("dark")) {
-
+    if (isDark) {
         localStorage.setItem("theme", "dark");
         themeToggle.innerText = "☀️ Light Mode";
-
     } else {
-
         localStorage.setItem("theme", "light");
         themeToggle.innerText = "🌙 Dark Mode";
     }
+
 });
-
-
-if (localStorage.getItem("theme") === "dark") {
-
-    document.body.classList.add("dark");
-    themeToggle.innerText = "☀️ Light Mode";
-}
