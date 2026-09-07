@@ -108,4 +108,56 @@ wanderlog-fullstack/
 ![Dark Mode](screenshots/dark-mode.png)
 
 
+## ⚙️ Installation & Setup
+
+Follow the steps below to run the Wanderlog project locally.
+
+### 1️⃣ Clone the Repository
+
+```bash
+git clone https://github.com/Kirtidhama0613/wanderlog.git
+```
+
+### 2️⃣ Navigate to the Project Folder
+
+```bash
+cd wanderlog
+```
+
+### 3️⃣ Backend Setup
+
+Navigate to the backend folder:
+
+```bash
+cd backend
+```
+
+Install the required dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4️⃣ Run the Backend Server
+
+```bash
+python app.py
+```
+
+The backend server will start at:
+
+```text
+http://127.0.0.1:5000
+```
+
+### 5️⃣ Run the Frontend
+
+Open the project folder in VS Code and run the frontend using Live Server.
+
+The frontend will open at:
+
+```text
+http://127.0.0.1:5500
+```
+
 
