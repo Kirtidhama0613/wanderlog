@@ -82,30 +82,30 @@ wanderlog-fullstack/
 
 ### 🏠 Home Page
 
-![Home Page](screenshots/home.png)
+![Home Page](./screenshots/home.png)
 
 ---
 
 ### ➕ Add Trip
 
-![Add Trip](screenshots/add-trip.png)
+![Add Trip](./screenshots/add-trip.png)
 
 ---
 
 ### 🧳 Trips
 
-![Trips](screenshots/trips.png)
+![Trips](./screenshots/trips.png)
 
 ---
 
 ### 👤 Profile Page
 
-![Profile Page](screenshots/profile.png)
+![Profile Page](./screenshots/profile.png)
 
 ---
 
 ### 🌙 Dark Mode
 
-![Dark Mode](screenshots/dark-mode.png)
+![Dark Mode](./screenshots/dark-mode.png)
 
 
