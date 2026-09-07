@@ -160,4 +160,39 @@ The frontend will open at:
 http://127.0.0.1:5500
 ```
 
+---
 
+## 🚀 Deployment
+
+### 🌐 Frontend
+
+https://kirtidhama0613.github.io/wanderlog/
+
+### ⚙️ Backend API
+
+https://wanderlog-1sta.onrender.com
+
+### ❤️ API Health Check
+
+https://wanderlog-1sta.onrender.com/api/health
+
+
+---
+
+## 🔮 Future Improvements
+
+- 🔐 User authentication and login system
+- 👥 Multiple user profiles
+- 🌍 Interactive maps and location integration
+- 🗓️ Advanced trip planning and itinerary management
+- 🔔 Trip reminders and notifications
+- ☁️ Cloud database integration
+- 📱 Improved mobile responsiveness
+
+---
+
+## 👩‍💻 Author
+
+**Kirti Dhama**
+
+- GitHub: https://github.com/Kirtidhama0613
