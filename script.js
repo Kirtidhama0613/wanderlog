@@ -6,7 +6,6 @@ const form = document.getElementById("tripForm");
 const tripContainer = document.getElementById("tripContainer");
 const tripImage = document.getElementById("tripImage");
 const imagePreview = document.getElementById("imagePreview");
-const themeToggle = document.getElementById("themeToggle");
 
 let trips = [];
 
@@ -622,34 +621,52 @@ function updateStatistics() {
    DARK MODE
 ================================ */
 
-
-const savedTheme = localStorage.getItem("theme");
-
-if (savedTheme === "dark") {
-
-    document.body.classList.add("dark");
-    themeToggle.innerText = "☀️ Light Mode";
-
-} else {
-
-    document.body.classList.remove("dark");
-    themeToggle.innerText = "🌙 Dark Mode";
-}
+const themeToggle = document.getElementById("themeToggle");
 
 
-themeToggle.addEventListener("click", () => {
+function applyTheme(theme) {
 
-    const isDark = document.body.classList.toggle("dark");
+    if (theme === "dark") {
 
-    if (isDark) {
-
-        localStorage.setItem("theme", "dark");
+        document.body.classList.add("dark");
         themeToggle.innerText = "☀️ Light Mode";
 
     } else {
 
-        localStorage.setItem("theme", "light");
+        document.body.classList.remove("dark");
         themeToggle.innerText = "🌙 Dark Mode";
     }
+}
 
+
+/* Load saved theme */
+
+const savedTheme = localStorage.getItem("theme") || "light";
+
+applyTheme(savedTheme);
+
+
+/* Toggle theme */
+
+themeToggle.addEventListener("click", () => {
+
+    const newTheme =
+        document.body.classList.contains("dark")
+            ? "light"
+            : "dark";
+
+    localStorage.setItem("theme", newTheme);
+
+    applyTheme(newTheme);
+});
+
+
+/* Sync theme between pages/tabs */
+
+window.addEventListener("storage", (event) => {
+
+    if (event.key === "theme") {
+
+        applyTheme(event.newValue || "light");
+    }
 });
